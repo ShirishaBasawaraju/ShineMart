@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shine Mart</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <!-- ---------- Header ---------- -->
+  <header class="header">
+    <div class="logo">Shine Mart</div>
+
+    <!-- Mobile menu toggle -->
+    <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Shop</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      <a href="wishlist.html">Wishlist (<span id="wishlist-count">0</span>)</a>
+    </nav>
+    <!-- Theme toggle -->
+<button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+
+  </header>
+
+  <!-- ---------- Main ---------- -->
+  <main>
+    <!-- Hero section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to Shine Mart</h1>
+        <p>Explore curated skincare, haircare, and beauty products from top brands like Dot & Key, Plum, and Good Vibes. Simplify your self-care routine with us.</p>
+        <a class="btn" href="products.html">Browse Our Products</a>
+      </div>
+      <div class="hero-image">
+        <img src="images/logo.jpg" alt="Skincare products display">
+      </div>
+    </section>
+  </main>
+
+
+
+
+  <!-- ---------- Mobile Nav Script ---------- -->
+  <script>
+    document.querySelector(".menu-toggle").addEventListener("click", () => {
+      document.querySelector(".nav-links").classList.toggle("open");
+    });
+  </script>
+  
+  <div id="footer"></div>
+
+  <!-- Load footer.html dynamically -->
+  <script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+  </script>
+</body>
+</html>

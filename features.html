@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purple App - Features</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="gradient fade">
+  <div class="container">
+    <h1>Our Features</h1>
+    <div class="features">
+      <div class="card">
+        <h3>Fast</h3>
+        <p>Optimized for speed and efficiency.</p>
+      </div>
+      <div class="card">
+        <h3>Modern</h3>
+        <p>Clean design with cutting-edge tools.</p>
+      </div>
+      <div class="card">
+        <h3>Connected</h3>
+        <p>Stay in sync with your world.</p>
+      </div>
+    </div>
+    <a href="index.html" class="btn transition-link">Back to Home</a>
+  </div>
+<!-- ---------- Footer ---------- -->
+<div id="footer"></div>s
+  <script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
