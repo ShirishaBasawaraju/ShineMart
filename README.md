@@ -68,5 +68,4 @@ JavaScript  – Interactivity
 -> 👩‍💻 Author
 
 Shirisha Basawaraju
-Feel free to reach out for feedback !
 
