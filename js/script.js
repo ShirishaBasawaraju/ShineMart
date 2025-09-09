@@ -9,7 +9,7 @@ const products = [
   { id: 7, name: "Plum Green Tea Oil-Free Moisturizer", price: 399, brand: "Plum", category: "Skincare", stock: true, discount: "15% off", rating: 4.5, description: "Hydration with Niacinamide & Hyaluronic Acid.", img: "images/plum green tree oilfreeM.jpg", skinTypes: ["oily","combination"] },
   { id: 8, name: "Plum 10% Niacinamide Face Serum", price: 499, brand: "Plum", category: "Skincare", stock: true, discount: null, rating: 4.6, description: "Serum with rice ferment to brighten skin.", img: "images/plum serum.jpg", skinTypes: ["all"] },
   { id: 9, name: "Plum Coconut Milk & Peptides Strength & Shine Shampoo", price: 699, brand: "Plum", category: "Haircare", stock: true, discount: null, rating: 4.3, description: "Strengthens hair & adds shine.", img: "images/plum hair shampoo.jpg", skinTypes: ["all"] },
-  { id: 10, name: "Plum Coconut Milk & Peptides Strength & Shine Conditioner", price: 599, brand: "Plum", category: "Haircare", stock: true, discount: null, rating: 4.4, description: "Prevents breakage & nourishes hair.", img: "images/plum conditioner.jpg", skinTypes: ["all"] }
+  { id: 10, name: "Plum Coconut Milk & Peptides Strength & Shine Conditioner", price: 599, brand: "Plum", category: "Haircare", stock: true, discount: null, rating: 4.4, description: "Prevents breakage & nourishes hair.", img: "images", skinTypes: ["all"] }
 ];
 
 /* ---------- Cart & Wishlist State ---------- */
